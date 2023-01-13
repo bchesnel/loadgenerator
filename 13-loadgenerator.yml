@@ -23,6 +23,11 @@ spec:
         image: python:3.8-slim
         ports:
         - containerPort: 80
+        resources:
+          limits:
+            cpu: 200m
+          requests:
+            cpu: 100m
 ---
 apiVersion: v1
 kind: Service
