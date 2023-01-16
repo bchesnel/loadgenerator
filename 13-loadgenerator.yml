@@ -39,6 +39,7 @@ metadata:
 spec:
   selector:
     app: loadgen
+  type: LoadBalancer 
   ports:
   - port: 80
     targetPort: 8080
